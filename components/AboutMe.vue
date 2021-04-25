@@ -26,7 +26,7 @@
           <ul class="pl-4 text-gray-200">
             <li v-for="(identity, idx) in identities" :key="idx" class="border-b border-gray-500 pb-4 pt-4 font-normal border-opacity-50">
               <span class="font-semibold">{{ identity.label }}:</span>
-              <a v-if="identity.type === 'email'" :href="`mailto:${identity.value}`" class="text-green-400">Click here</a>
+              <a v-if="identity.type === 'email'" :href="`mailto:${identity.value}`" class="text-green-400">{{ identity.value }}</a>
               <span v-else>{{ identity.value }}</span>
             </li>
           </ul>
@@ -50,7 +50,7 @@ export default {
         {
           label: 'Email',
           type: 'email',
-          value: 'mochammad.fadholi.st@gmail.com'
+          value: 'market.fadholi@gmail.com'
         },
         {
           label: 'Age',
