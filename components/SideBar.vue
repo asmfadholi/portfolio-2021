@@ -36,10 +36,10 @@ export default {
           name: 'About Me',
           to: '/about-me'
         },
-        {
-          name: 'What I Do',
-          to: '/what-i-do'
-        },
+        // {
+        //   name: 'What I Do',
+        //   to: '/what-i-do'
+        // },
         {
           name: 'Resume',
           to: '/resume'
@@ -48,10 +48,10 @@ export default {
           name: 'Portfolio',
           to: '/portfolio'
         },
-        {
-          name: 'Testimonial',
-          to: '/testimonial'
-        },
+        // {
+        //   name: 'Testimonial',
+        //   to: '/testimonial'
+        // },
         {
           name: 'Contact',
           to: '/contact'
