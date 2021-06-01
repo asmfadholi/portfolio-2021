@@ -40,10 +40,10 @@ export default {
         //   name: 'What I Do',
         //   to: '/what-i-do'
         // },
-        {
-          name: 'Resume',
-          to: '/resume'
-        },
+        // {
+        //   name: 'Resume',
+        //   to: '/resume'
+        // },
         {
           name: 'Portfolio',
           to: '/portfolio'
