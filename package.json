@@ -2,12 +2,15 @@
   "name": "2021-portfolio",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://asmfadholi.github.io/portfolio",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "predeploy": "npm run generate",
+    "deploy": "gh-pages -d dist",
     "lint": "npm run lint:js"
   },
   "lint-staged": {
@@ -38,6 +41,7 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-vue": "^7.7.0",
     "fibers": "^5.0.0",
+    "gh-pages": "^3.2.0",
     "husky": "^4.3.8",
     "lint-staged": "^10.5.4",
     "postcss": "^8.2.8",
