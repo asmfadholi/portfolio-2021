@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{247:function(t,n,o){"use strict";o.r(n);var e={},l=o(8),component=Object(l.a)(e,(function(){var t=this.$createElement,n=this._self._c||t;return n("div",[n("Portfolio")],1)}),[],!1,null,null,null);n.default=component.exports;installComponents(component,{Portfolio:o(115).default})}}]);
