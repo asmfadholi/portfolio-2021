@@ -27,14 +27,14 @@
 </template>
 
 <script>
-import transfr from '@/assets/images/transfr.png'
-import desa from '@/assets/images/desa.png'
-import outing from '@/assets/images/outing.png'
-import vms from '@/assets/images/vms.png'
-import jojonomic from '@/assets/images/jojonomic.png'
-import biznis from '@/assets/images/biznis.png'
-import urbanhire from '@/assets/images/urbanhire.png'
-import pazarin from '@/assets/images/pazarin.png'
+// import transfr from '@/assets/images/transfr.png'
+// import desa from '@/assets/images/desa.png'
+// import outing from '@/assets/images/outing.png'
+// import vms from '@/assets/images/vms.png'
+// import jojonomic from '@/assets/images/jojonomic.png'
+// import biznis from '@/assets/images/biznis.png'
+// import urbanhire from '@/assets/images/urbanhire.png'
+// import pazarin from '@/assets/images/pazarin.png'
 
 import 'vue-sequential-entrance/vue-sequential-entrance.css'
 
@@ -43,35 +43,35 @@ export default {
     return {
       list: [
         {
-          image: transfr,
+          image: 'https://github.com/asmfadholi/portfolio-2021/raw/master/assets/images/transfr.png',
           link: 'https://transfr-web.firebaseapp.com'
         },
         {
-          image: desa,
+          image: 'https://github.com/asmfadholi/portfolio-2021/raw/master/assets/images/desa.png',
           link: 'https://desa-wisata-c1a52.web.app'
         },
         {
-          image: outing,
+          image: 'https://github.com/asmfadholi/portfolio-2021/raw/master/assets/images/outing.png',
           link: 'https://www.outing.id'
         },
         {
-          image: vms,
+          image: 'https://github.com/asmfadholi/portfolio-2021/raw/master/assets/images/vms.png',
           link: 'https://vms.outing.id'
         },
         {
-          image: jojonomic,
+          image: 'https://github.com/asmfadholi/portfolio-2021/raw/master/assets/images/jojonomic.png',
           link: 'https://corp.jojonomic.com'
         },
         {
-          image: biznis,
+          image: 'https://github.com/asmfadholi/portfolio-2021/raw/master/assets/images/biznis.png',
           link: 'https://biznis.id'
         },
         {
-          image: urbanhire,
+          image: 'https://github.com/asmfadholi/portfolio-2021/raw/master/assets/images/urbanhire.png',
           link: 'https://www.urbanhire.co/employers'
         },
         {
-          image: pazarin,
+          image: 'https://github.com/asmfadholi/portfolio-2021/raw/master/assets/images/pazarin.png',
           link: 'https://pazarin-id.web.app'
         }
       ]
@@ -96,6 +96,11 @@ export default {
         transition: all 0.25s ease-in-out;
         width: 100%;
         opacity: 0.7;
+      }
+    }
+    @media (max-width: 640px) {
+      span {
+        grid-template-columns: repeat(1,minmax(0,1fr));
       }
     }
     .wrapper {

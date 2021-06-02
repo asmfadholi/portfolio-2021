@@ -3,7 +3,7 @@
     <div class="text-gray-200 flex flex-col h-full p-0 lg:p-4">
       <nuxt-link to="/" class="mt-6 flex justify-center justify-items-center flex-none lg:flex hidden">
         <span class="flex justify-center justify-items-center rounded-full bg-gray-600 p-2">
-          <img src="~assets/images/photo.jpeg" alt="photo" class="rounded-full w-40 h-40 object-cover">
+          <img :src="photo" alt="photo" class="rounded-full w-40 h-40 object-cover">
         </span>
       </nuxt-link>
       <h1 class="text-xl text-gray-200 text-center mb-0 mt-4 font-medium flex-none leading-loose pl-3 pr-3 lg:block hidden">
@@ -27,6 +27,7 @@
 export default {
   data () {
     return {
+      photo: 'https://github.com/asmfadholi/portfolio-2021/raw/master/assets/images/photo.jpeg',
       menus: [
         {
           name: 'Home',
