@@ -31,7 +31,7 @@ export default {
 }
 
 .v-lazy-image {
-  filter: blur(10px);
+  filter: blur(5px);
   transition: filter 0.7s;
 }
 .v-lazy-image-loaded {

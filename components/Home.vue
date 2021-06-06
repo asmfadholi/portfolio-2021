@@ -1,7 +1,14 @@
 <template>
   <div class="home relative h-screen">
     <div class="absolute top-0 left-0 h-full w-full z-10 bg-gray-800 bg-opacity-75" />
-    <div class="background absolute top-0 left-0 h-full w-full z-0" />
+    <!-- <div class="background absolute top-0 left-0 h-full w-full z-0" /> -->
+    <!-- <img src="~assets/images/home.webp" alt="chevron" class="background absolute top-0 left-0 h-full w-full z-0"> -->
+    <v-lazy-image
+      class="background absolute top-0 left-0 h-full w-full z-0"
+      :src="Home"
+      alt=""
+      :src-placeholder="HomeMin"
+    />
     <div class="flex justify-center justify-items-center z-20 relative text-white h-full">
       <div class="text-center mt-auto mb-auto text-gray-100">
         <p class="text-3xl mb-4 font-medium">
@@ -29,19 +36,34 @@
 </template>
 
 <script>
+import Home from '@/assets/images/home.webp'
+import HomeMin from '@/assets/images/home-min.webp'
 
 export default {
-
+  data () {
+    return {
+      Home,
+      HomeMin
+    }
+  }
 }
 </script>
 
 <style lang="scss">
 .home {
+  .v-lazy-image {
+  filter: blur(1px);
+  transition: filter 0.7s;
+  }
+  .v-lazy-image-loaded {
+    filter: blur(0);
+  }
   .background {
-    background-image: url('~assets/images/home.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 0px;
+    overflow: hidden;
+    z-index: 1;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
   }
   .typed-cursor {
     font-size: 3.75rem;
