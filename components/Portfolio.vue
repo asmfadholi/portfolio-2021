@@ -17,7 +17,12 @@
         <sequential-entrance>
           <div v-for="(each, idx) in list" :key="idx" class="h-80 wrapper">
             <a :href="each.link" target="_blank">
-              <img :src="each.image" alt="" class="h-80 object-cover rounded-sm">
+              <v-lazy-image
+                class="h-80 object-cover rounded-sm"
+                :src="each.image"
+                alt=""
+                :src-placeholder="each.min"
+              />
             </a>
           </div>
         </sequential-entrance>
@@ -35,6 +40,14 @@
 // import biznis from '@/assets/images/biznis.png'
 // import urbanhire from '@/assets/images/urbanhire.png'
 // import pazarin from '@/assets/images/pazarin.png'
+import transfrMin from '@/assets/images/transfr-min.png'
+import desaMin from '@/assets/images/desa-min.png'
+import outingMin from '@/assets/images/outing-min.png'
+import vmsMin from '@/assets/images/vms-min.png'
+import jojonomicMin from '@/assets/images/jojonomic-min.png'
+import biznisMin from '@/assets/images/biznis-min.png'
+import urbanhireMin from '@/assets/images/urbanhire-min.png'
+import pazarinMin from '@/assets/images/pazarin-min.png'
 
 import 'vue-sequential-entrance/vue-sequential-entrance.css'
 
@@ -44,35 +57,43 @@ export default {
       list: [
         {
           image: 'https://github.com/asmfadholi/portfolio-2021/raw/master/assets/images/transfr.png',
-          link: 'https://transfr-web.firebaseapp.com'
+          link: 'https://transfr-web.firebaseapp.com',
+          min: transfrMin
         },
         {
           image: 'https://github.com/asmfadholi/portfolio-2021/raw/master/assets/images/desa.png',
-          link: 'https://desa-wisata-c1a52.web.app'
+          link: 'https://desa-wisata-c1a52.web.app',
+          min: desaMin
         },
         {
           image: 'https://github.com/asmfadholi/portfolio-2021/raw/master/assets/images/outing.png',
-          link: 'https://www.outing.id'
+          link: 'https://www.outing.id',
+          min: outingMin
         },
         {
           image: 'https://github.com/asmfadholi/portfolio-2021/raw/master/assets/images/vms.png',
-          link: 'https://vms.outing.id'
+          link: 'https://vms.outing.id',
+          min: vmsMin
         },
         {
           image: 'https://github.com/asmfadholi/portfolio-2021/raw/master/assets/images/jojonomic.png',
-          link: 'https://corp.jojonomic.com'
+          link: 'https://corp.jojonomic.com',
+          min: jojonomicMin
         },
         {
           image: 'https://github.com/asmfadholi/portfolio-2021/raw/master/assets/images/biznis.png',
-          link: 'https://biznis.id'
+          link: 'https://biznis.id',
+          min: biznisMin
         },
         {
           image: 'https://github.com/asmfadholi/portfolio-2021/raw/master/assets/images/urbanhire.png',
-          link: 'https://www.urbanhire.co/employers'
+          link: 'https://www.urbanhire.co/employers',
+          min: urbanhireMin
         },
         {
           image: 'https://github.com/asmfadholi/portfolio-2021/raw/master/assets/images/pazarin.png',
-          link: 'https://pazarin-id.web.app'
+          link: 'https://pazarin-id.web.app',
+          min: pazarinMin
         }
       ]
     }
