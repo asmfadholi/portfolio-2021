@@ -29,7 +29,7 @@ export default {
   plugins: [
     { src: '~/plugins/vue-typed.js', mode: 'client' },
     { src: '~/plugins/vue-sequential.js', mode: 'client' },
-    { src: '~/plugins/vue-lazy-image.js', mode: 'client' }
+    { src: '~/plugins/vue-lazy-image.js' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
