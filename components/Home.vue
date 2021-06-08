@@ -1,8 +1,6 @@
 <template>
   <div class="home relative h-screen">
     <div class="absolute top-0 left-0 h-full w-full z-10 bg-gray-800 bg-opacity-75" />
-    <!-- <div class="background absolute top-0 left-0 h-full w-full z-0" /> -->
-    <!-- <img src="~assets/images/home.webp" alt="chevron" class="background absolute top-0 left-0 h-full w-full z-0"> -->
     <v-lazy-image
       class="background absolute top-0 left-0 h-full w-full z-0"
       :src="Home"

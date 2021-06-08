@@ -4,7 +4,7 @@ export default {
     title: 'Mochammad Fadholi | Software Engineer',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=1' },
       { hid: 'description', name: 'description', content: 'Mochammad Fadholi | Software Engineer' }
     ],
     link: [
