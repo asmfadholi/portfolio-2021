@@ -4,9 +4,11 @@
       <nuxt-link to="/" class="mt-6 flex justify-center justify-items-center flex-none lg:flex hidden">
         <span class="flex justify-center justify-items-center rounded-full bg-gray-600 p-2">
           <v-lazy-image
-            class="rounded-full w-40 h-40 object-cover"
+            class="rounded-full object-cover photo"
             :src="photo"
             alt="photo"
+            width="160"
+            height="160"
             :src-placeholder="photoMin"
           />
         </span>
@@ -77,6 +79,10 @@ export default {
   transition: width 0.5s ease-in-out;
   .nuxt-link-exact-active.nuxt-link-active {
     color: #34D399;
+  }
+  .photo {
+    height: 160px;
+    width: 160px;
   }
   .menu:hover {
     color: #34D399;

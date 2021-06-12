@@ -16,11 +16,18 @@
       <div class="list">
         <sequential-entrance>
           <div v-for="(each, idx) in list" :key="idx" class="h-80 wrapper">
-            <a :href="each.link" target="_blank">
+            <a
+              :href="each.link"
+              target="_blank"
+              rel="noreferrer"
+            >
               <v-lazy-image
-                class="h-80 object-cover rounded-sm"
+                class="
+              h-80
+              object-cover
+              rounded-sm"
                 :src="each.image"
-                alt=""
+                :alt="`image-${idx}`"
                 :src-placeholder="each.min"
               />
             </a>
