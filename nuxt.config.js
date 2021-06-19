@@ -9,9 +9,11 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
-      { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true },
       {
         rel: 'stylesheet',
+        media: 'print',
+        onload: "this.onload=null;this.removeAttribute('media');",
         href: 'https://fonts.googleapis.com/css2?family=Poppins&display=swap'
       }
     ]
