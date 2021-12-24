@@ -19,7 +19,7 @@ export default {
     ]
   },
   router: {
-    mode: 'hash'
+    mode: 'history'
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
