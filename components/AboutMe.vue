@@ -17,13 +17,7 @@
               I'm <span class="text-green-400">Mochammad Fadholi,</span> a Software Engineer
             </h2>
             <p class="text-gray-300 text-opacity-60 mb-4 text-base leading-loose">
-              I found my real interest, since I started my journey as a software engineer for about 3 years ago.
-              Curiosity is a provision for me to continue to be thirsty for knowledge
-              and to learn more and more. doing side projects after work is one way
-              for me to explore knowledge in the world of IT.
-            </p>
-            <p class="text-gray-300 text-opacity-60 mb-4 text-base leading-loose">
-              The decision that I entered in the IT world took me to a different world which was quite exciting and full of challenges.
+              Software engineer, primarily as web developer, with 4+ years of experience. Skilled in javascript, nodejs, reactjs and vuejs.
             </p>
           </div>
 
